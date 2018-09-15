@@ -1,0 +1,19 @@
+<div class="items-list-wrapper">
+    <div class="container">
+        <div class="row">
+            <h2 class="sub-title sub-title--white col-sm-12">{{title}}</h2>
+        </div>
+        
+        <ul class="items-list row">
+            {{# items}}
+            <li class="items-list-elem col-sm-12 col-md-6 d-flex">
+                <i class="icon items-list-elem__icon">{{icon}}</i>
+                <div class="items-list-elem-info">
+                    <h3 class="items-list-elem__title">{{title}}</h3>
+                    <div class="items-list-elem__description">{{description}}</div>
+                </div>
+            </li>
+            {{/ items}}
+        </ul>
+    </div>
+</div>

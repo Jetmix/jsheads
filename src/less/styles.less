@@ -46,8 +46,27 @@ body {
 }
 
 .sub-title {
+  margin-bottom: 40px; 
   .title;
   font-size: 45px;
+
+  &--white {
+    color: @subtitle;
+  }
+
+  &--h3 {
+    .title;
+
+    font-family: 'Arial';
+    font-size: 30px;
+    font-weight: 400;
+    text-transform: capitalize;
+    color: @subheader;
+  }
+
+  &--no-marg {
+    margin-bottom: 0;
+  }
 
   @media screen and (max-width: @mobile) {
     text-align: left;
@@ -116,3 +135,120 @@ body {
 }
 /*-- END MAIN --*/
 
+/*-- ITEMS LIST --*/
+.items-list {
+  &-wrapper {
+    padding: 65px 0 125px;
+    .gradient(left, @background-start, @background-stop);
+  }
+
+  &-elem {
+    margin-bottom: 30px;
+
+    &__icon {
+      margin-right: 15px;
+    }
+
+    &__title {
+      margin-bottom: 10px;
+      font-family: 'BrandonGrotesque Bold';
+      font-size: 18px;
+      text-transform: uppercase;
+      color: @text-header;
+    }
+
+    &__description {
+      font-family: 'Open Sans';
+      font-size: 16px;
+      color: @text;
+    }
+  }
+}
+/*-- END ITEMS LIST --*/
+
+/*-- LEARN MORE --*/
+.learn-more {
+  &-wrapper {
+    padding: 110px 0 75px;
+    background: url(../img/more-bg.jpg) center 0 no-repeat;
+    background-size: cover;
+  }
+
+  &-title {
+    margin-bottom: 45px;
+  }
+}
+/*-- END LEARN MORE --*/
+
+/*-- FOOTER --*/
+.footer {
+  border-top: 4px solid @border-color;
+  background-color: @footer-bg;
+
+  &__category {
+    margin-bottom: 15px;
+    font-size: 16px;
+    text-transform: uppercase;
+    color: @color-subheader-2;
+  }
+
+  &-nav {
+    padding-top: 75px;
+
+    &--mod {
+      background-color: @subfooter-bg;
+    }
+
+    &__list {
+      &-item {
+        margin-bottom: 5px;
+        list-style: none;
+      }
+    }
+
+    &__link {
+      font-family: 'BrandonGrotesque Medium';
+      font-size: 14px;
+      text-transform: uppercase;
+      text-decoration: none;
+      color: @footer-link;
+
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+
+  &-address {
+    margin-bottom: 20px;
+  }
+
+  &__item {
+    font-family: 'BrandonGrotesque Medium';
+    font-size: 14px;
+    text-transform: uppercase;
+    color: @footer-link;
+    
+    &--phone {
+      font-size: 24px;
+      margin-bottom: 5px;
+    }
+
+    &--link {
+      font-size: 16px;
+    }
+  }
+}
+
+.subfooter {
+  padding: 12px 0 14px;
+  background-color: @subfooter-bg;
+
+  .copy {
+    font-family: 'BrandonGrotesque Medium';
+    font-size: 14px;
+    text-transform: uppercase;
+    color: @footer-copy;
+  }
+}
+/*-- END FOOTER --*/

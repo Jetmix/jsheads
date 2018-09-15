@@ -22,5 +22,160 @@
                 "link": ""
             }
         ]
+    },
+    "services": {
+        "title": "Services",
+        "items": [
+            {
+                "title": "Desktop Development",
+                "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna",
+                "icon": ""
+            },
+            {
+                "title": "Web Development",
+                "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna",
+                "icon": ""
+            },
+            {
+                "title": "Mobile Development",
+                "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna",
+                "icon": ""
+            },
+            {
+                "title": "Quality Assurance",
+                "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna",
+                "icon": ""
+            },
+            {
+                "title": "Startups",
+                "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna",
+                "icon": ""
+            },
+            {
+                "title": "Dedicated Team",
+                "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna",
+                "icon": ""
+            }
+        ]
+    },
+    "solutions": {
+        "title": "Solutions",
+        "items": [
+            {
+                "title": "Commerce",
+                "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna",
+                "icon": ""
+            },
+            
+            {
+                "title": "B2B & B2C Web Portals",
+                "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna",
+                "icon": ""
+            },
+            {
+                "title": "Enterprise Portals & Intranet",
+                "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna",
+                "icon": ""
+            },
+            {
+                "title": "Enterprice Mobility",
+                "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna",
+                "icon": ""
+            },
+            {
+                "title": "Enterprise Resource Planning",
+                "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna",
+                "icon": ""
+            },
+            {
+                "title": "Online Billing & Payment",
+                "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna",
+                "icon": ""
+            },
+            {
+                "title": "Enterprise Content Document Manangement",
+                "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna",
+                "icon": ""
+            },
+            {
+                "title": "Customer Relationship Management",
+                "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna",
+                "icon": ""
+            }
+        ]
+    },
+    "advantages": {
+        "title": "Our Advantages",
+        "items": [
+            {
+                "title": "Customer-oriented approach",
+                "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna",
+                "icon": ""
+            },
+            
+            {
+                "title": "Fair cost",
+                "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna",
+                "icon": ""
+            },
+            {
+                "title": "Stable qualified teams",
+                "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna",
+                "icon": ""
+            },
+            {
+                "title": "Full cycle services",
+                "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna",
+                "icon": ""
+            },
+            {
+                "title": "Seamless Communication",
+                "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna",
+                "icon": ""
+            },
+            {
+                "title": "Flexibility",
+                "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna",
+                "icon": ""
+            }
+        ]
+    },
+    "footer": {
+        "menu": [
+            {
+                "title": "Company",
+                "items": [
+                    "About",
+                    "Advantages",
+                    "Approach",
+                    "Cases",
+                    "Blog",
+                    "Carreer",
+                    "Contact Us"
+                ]
+            },
+            {
+                "title": "Services",
+                "items": [
+                    "Desktop Development",
+                    "Web Development",
+                    "Mobile Development",
+                    "Quality Assurance",
+                    "Startups",
+                    "Dedicated Team"
+                ]
+            },
+            {
+                "title": "Solutions",
+                "items": [
+                    "Travelling & Hospitality",
+                    "Media & Entertainment",
+                    "E-Commerce",
+                    "Healtcare",
+                    "Retail & Distribution",
+                    "Education & HRM"
+                ]
+            }
+        ]
     }
 }

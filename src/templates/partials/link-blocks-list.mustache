@@ -1,0 +1,19 @@
+<div class="links-block-list-wrapper">
+    <div class="container">
+        <div class="row">
+            <h2 class="sub-title">{{title}}</h2>
+        </div>
+
+        <ul class="links-block-list row">
+            {{# items}}
+            <li class="links-block-list-elem col-sm-12 col-md-4">
+                <i class="icon">{{icon}}</i>
+                <h3 class="links-block-list-elem__title">
+                    <a href="">{{title}}</a>
+                </h3>
+                <div class="links-block-list-elem__description">{{description}}</div>
+            </li>
+            {{/ items}}
+        </ul>
+    </div>
+</div>

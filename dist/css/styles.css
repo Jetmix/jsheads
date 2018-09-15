@@ -51,10 +51,27 @@ body {
   margin-bottom: 80px;
 }
 .sub-title {
+  margin-bottom: 40px;
   font-family: 'BrandonGrotesque Medium';
   text-transform: uppercase;
   text-align: center;
   font-size: 45px;
+}
+.sub-title--white {
+  color: #fff;
+}
+.sub-title--h3 {
+  font-family: 'BrandonGrotesque Medium';
+  text-transform: uppercase;
+  text-align: center;
+  font-family: 'Arial';
+  font-size: 30px;
+  font-weight: 400;
+  text-transform: capitalize;
+  color: #e5f5ff;
+}
+.sub-title--no-marg {
+  margin-bottom: 0;
 }
 @media screen and (max-width: 575px) {
   .sub-title {
@@ -117,3 +134,99 @@ body {
   padding: 115px 0 180px;
 }
 /*-- END MAIN --*/
+/*-- ITEMS LIST --*/
+.items-list-wrapper {
+  padding: 65px 0 125px;
+  background-color: #415663;
+  background: -webkit-linear-gradient(left, #415663, #447597);
+  background: -moz-linear-gradient(left, #415663, #447597);
+  background: -ms-linear-gradient(left, #415663, #447597);
+  background: linear-gradient(left, #415663, #447597);
+}
+.items-list-elem {
+  margin-bottom: 30px;
+}
+.items-list-elem__icon {
+  margin-right: 15px;
+}
+.items-list-elem__title {
+  margin-bottom: 10px;
+  font-family: 'BrandonGrotesque Bold';
+  font-size: 18px;
+  text-transform: uppercase;
+  color: #bbebff;
+}
+.items-list-elem__description {
+  font-family: 'Open Sans';
+  font-size: 16px;
+  color: #b8dcf2;
+}
+/*-- END ITEMS LIST --*/
+/*-- LEARN MORE --*/
+.learn-more-wrapper {
+  padding: 110px 0 75px;
+  background: url(../img/more-bg.jpg) center 0 no-repeat;
+  background-size: cover;
+}
+.learn-more-title {
+  margin-bottom: 45px;
+}
+/*-- END LEARN MORE --*/
+/*-- FOOTER --*/
+.footer {
+  border-top: 4px solid #fdc739;
+  background-color: #304049;
+}
+.footer__category {
+  margin-bottom: 15px;
+  font-size: 16px;
+  text-transform: uppercase;
+  color: #fff;
+}
+.footer-nav {
+  padding-top: 75px;
+}
+.footer-nav--mod {
+  background-color: #2a3840;
+}
+.footer-nav__list-item {
+  margin-bottom: 5px;
+  list-style: none;
+}
+.footer-nav__link {
+  font-family: 'BrandonGrotesque Medium';
+  font-size: 14px;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #7393a6;
+}
+.footer-nav__link:hover {
+  text-decoration: underline;
+}
+.footer-address {
+  margin-bottom: 20px;
+}
+.footer__item {
+  font-family: 'BrandonGrotesque Medium';
+  font-size: 14px;
+  text-transform: uppercase;
+  color: #7393a6;
+}
+.footer__item--phone {
+  font-size: 24px;
+  margin-bottom: 5px;
+}
+.footer__item--link {
+  font-size: 16px;
+}
+.subfooter {
+  padding: 12px 0 14px;
+  background-color: #2a3840;
+}
+.subfooter .copy {
+  font-family: 'BrandonGrotesque Medium';
+  font-size: 14px;
+  text-transform: uppercase;
+  color: #596e7a;
+}
+/*-- END FOOTER --*/
