@@ -1,0 +1,119 @@
+@font-face {
+  font-family: 'BrandonGrotesque Medium';
+  src: url(../fonts/brandon_med.otf);
+}
+@font-face {
+  font-family: 'BrandonGrotesque Black';
+  src: url(../fonts/brandon_blk.otf);
+}
+@font-face {
+  font-family: 'BrandonGrotesque Bold';
+  src: url(../fonts/brandon_bld.otf);
+}
+* {
+  margin: 0;
+  padding: 0;
+}
+html,
+body {
+  height: 100%;
+  width: 100%;
+  font-family: 'BrandonGrotesque Medium';
+  font-size: 16px;
+  background-color: #fff;
+}
+.container {
+  height: auto;
+  max-width: 1110px;
+  margin: 0 auto;
+}
+.icon {
+  display: inline-block;
+}
+.title {
+  font-family: 'BrandonGrotesque Medium';
+  text-transform: uppercase;
+  text-align: center;
+}
+.main-title {
+  font-family: 'BrandonGrotesque Medium';
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 80px;
+  line-height: 95px;
+  color: #fff;
+}
+.main-title--color {
+  font-family: 'BrandonGrotesque Bold';
+  color: #fdc739;
+}
+.main-title-block {
+  margin-bottom: 80px;
+}
+.sub-title {
+  font-family: 'BrandonGrotesque Medium';
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 45px;
+}
+@media screen and (max-width: 575px) {
+  .sub-title {
+    text-align: left;
+  }
+}
+.center {
+  margin: 0 auto;
+}
+.btn {
+  display: inline-block;
+  min-height: 50px;
+  padding: 14px 76px 15px;
+  box-sizing: border-box;
+  border-radius: 5px;
+  font-size: 15px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  text-decoration: none;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+.btn--main {
+  background-color: #fdc739;
+  background: -webkit-linear-gradient(right, #fdc739, #fff04a);
+  background: -moz-linear-gradient(right, #fdc739, #fff04a);
+  background: -ms-linear-gradient(right, #fdc739, #fff04a);
+  background: linear-gradient(right, #fdc739, #fff04a);
+  color: #161f25;
+}
+/*-- HEADER --*/
+.header {
+  padding-top: 40px;
+  align-items: center;
+}
+.header-nav {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+.header-nav__item {
+  margin-left: 25px;
+  font-size: 15px;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #fff;
+}
+.header-nav__item--contacts {
+  padding: 14px 24px 15px;
+  border: 2px solid #fdc739;
+  border-radius: 5px;
+  color: #fdc739;
+}
+/*-- END HEADER --*/
+/*-- MAIN --*/
+.main {
+  background: url(../img/main-bg.jpg) center 0 no-repeat;
+  background-size: cover;
+}
+.main-content {
+  padding: 115px 0 180px;
+}
+/*-- END MAIN --*/

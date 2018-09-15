@@ -1,0 +1,21 @@
+<!-- HEADER -->
+<header class="header row">
+    <div class="col-sm-6 col-md-3 logo-block">
+        <a href="/" class="logo">
+            <img src="" alt="logo">
+        </a>
+    </div>
+
+    <div class="col-sm-6 d-md-none hamb-menu">
+        <a href="" id="menuToggler" class="hamb-menu__btn">
+            <span class="hamb-menu__icon"></span>
+        </a>
+    </div>	
+
+    <nav class="header-nav col-sm-12 col-md-9">
+        {{# header.menu}}
+        <a href="{{link}}" class="header-nav__item">{{title}}</a>
+        {{/ header.menu}}
+        <a href="" id="contactUs" class="header-nav__item header-nav__item--contacts">Contact Us</a>
+    </nav>
+</header>

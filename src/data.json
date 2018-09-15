@@ -1,0 +1,26 @@
+{
+    "header": {
+        "menu": [
+            {
+                "title": "Company",
+                "link": ""
+            },
+            {
+                "title": "Services",
+                "link": ""
+            },
+            {
+                "title": "Solutions",
+                "link": ""
+            },
+            {
+                "title": "Industries",
+                "link": ""
+            },
+            {
+                "title": "Approach",
+                "link": ""
+            }
+        ]
+    }
+}
