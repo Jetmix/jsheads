@@ -60,6 +60,9 @@ body {
 .sub-title--white {
   color: #fff;
 }
+.sub-title--dark {
+  color: #415663;
+}
 .sub-title--h3 {
   font-family: 'BrandonGrotesque Medium';
   text-transform: uppercase;
@@ -162,6 +165,86 @@ body {
   color: #b8dcf2;
 }
 /*-- END ITEMS LIST --*/
+/*-- SERVICES --*/
+.services-wrapper {
+  padding: 50px 45px;
+}
+.services-elem {
+  margin-bottom: 25px;
+}
+.services-elem__link {
+  display: block;
+  position: relative;
+  width: 100%;
+  padding: 0 35px 30px;
+  border-radius: 5px;
+  overflow: hidden;
+  text-align: center;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  text-decoration: none;
+}
+.services-elem__link:hover {
+  box-shadow: 0 0 50px rgba(0, 0, 0, 0.2);
+}
+.services-elem__link:hover .services-elem__title {
+  color: #fdc739;
+}
+.services-elem__link:hover .services-elem__link-block {
+  display: block;
+}
+.services-elem__title {
+  margin-bottom: 15px;
+  font-size: 20px;
+  text-transform: uppercase;
+  color: #415663;
+}
+.services-elem__description {
+  font-family: 'Open Sans';
+  font-size: 16px;
+  color: #747c83;
+}
+.services-elem__link-block {
+  display: none;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  height: 80px;
+  width: 80px;
+  background-color: #fdc739;
+  transform: translate(50%, 50%) rotate(45deg);
+}
+/*-- END SERVICES --*/
+/*-- INDUSTRIES --*/
+.industries-wrapper {
+  padding: 60px 50px;
+}
+.industries-elem {
+  margin-bottom: 25px;
+}
+.industries-elem__link {
+  display: block;
+  position: relative;
+  width: 100%;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+.industries-elem__image {
+  display: block;
+  height: 100%;
+  width: 100%;
+  max-width: 100%;
+}
+.industries-elem__title {
+  position: absolute;
+  bottom: 25px;
+  padding: 0 30px;
+  font-size: 28px;
+  color: #fff;
+  text-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  text-decoration: none;
+  text-transform: uppercase;
+}
+/*-- END INDUSTRIES --*/
 /*-- LEARN MORE --*/
 .learn-more-wrapper {
   padding: 110px 0 75px;

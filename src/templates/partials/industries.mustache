@@ -1,0 +1,18 @@
+<div class="industries-wrapper">
+    <div class="container">
+        <div class="row">
+            <h2 class="sub-title sub-title--dark col-sm-12">{{title}}</h2>
+        </div>
+        
+        <ul class="industries-list row">
+            {{# items}}
+            <li class="industries-elem col-md-6 col-lg-4 d-flex">
+                <a href="" class="industries-elem__link">
+                    <img src="/img/industry_{{image}}.jpg" alt="" class="industries-elem__image">
+                    <h3 class="industries-elem__title">{{title}}</h3>
+                </a>
+            </li>
+            {{/ items}}
+        </ul>
+    </div>
+</div>

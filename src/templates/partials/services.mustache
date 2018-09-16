@@ -1,0 +1,24 @@
+<div class="services-wrapper">
+    <div class="container">
+        <div class="row">
+            <h2 class="sub-title sub-title--dark col-sm-12">{{title}}</h2>
+        </div>
+        
+        <ul class="services-list row">
+            {{# items}}
+            <li class="services-elem col-xs-12 col-md-6 col-lg-4 d-flex">
+                <a href="" class="services-elem__link">
+                    <div class="services-elem__icon">
+                        <i class="icon {{icon}}"></i>
+                    </div>
+                    <h3 class="services-elem__title">{{title}}</h3>
+                    <p class="services-elem__description">{{description}}</p>
+                    <div class="services-elem__link-block">
+                        <i class="icon"></i>
+                    </div>
+                </a>
+            </li>
+            {{/ items}}
+        </ul>
+    </div>
+</div>

@@ -54,6 +54,10 @@ body {
     color: @subtitle;
   }
 
+  &--dark {
+    color: @color-subheader-1;
+  }
+
   &--h3 {
     .title;
 
@@ -165,6 +169,104 @@ body {
   }
 }
 /*-- END ITEMS LIST --*/
+
+/*-- SERVICES --*/
+.services {
+  &-wrapper {
+    padding: 50px 45px;
+  }
+
+  &-elem {
+    margin-bottom: 25px;
+
+    &__link {
+      display: block;
+      position: relative;
+      width: 100%;
+      padding: 0 35px 30px;
+      border-radius: 5px;
+      overflow: hidden;
+      text-align: center;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      text-decoration: none;
+
+      &:hover {
+        box-shadow: 0 0 50px rgba(0, 0, 0, 0.2);
+
+        .services-elem__title {
+          color: @color-subheader-3;
+        }
+
+        .services-elem__link-block {
+          display: block;
+        }
+      }
+    }
+
+    &__title {
+      margin-bottom: 15px;
+      font-size: 20px;
+      text-transform: uppercase;
+      color: @color-subheader-1;
+    }
+
+    &__description {
+      font-family: 'Open Sans';
+      font-size: 16px;
+      color: @text-service;
+    }
+
+    &__link-block {
+      display: none;
+      position: absolute;
+      right: 0;
+      bottom: 0;
+      height: 80px;
+      width: 80px;
+      background-color: @border-color;
+      transform: translate(50%, 50%) rotate(45deg);
+    }
+  }
+}
+/*-- END SERVICES --*/
+
+/*-- INDUSTRIES --*/
+.industries {
+  &-wrapper {
+    padding: 60px 50px;
+  }
+
+  &-elem {
+    margin-bottom: 25px;
+
+    &__link {
+      display: block;
+      position: relative;
+      width: 100%;
+      border-radius: 5px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    &__image {
+      display: block;
+      height: 100%;
+      width: 100%;
+      max-width: 100%;
+    }
+
+    &__title {
+      position: absolute;
+      bottom: 25px;
+      padding: 0 30px;
+      font-size: 28px;
+      color: @subtitle;
+      text-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      text-decoration: none;
+      text-transform: uppercase;
+    }
+  }
+}
+/*-- END INDUSTRIES --*/
 
 /*-- LEARN MORE --*/
 .learn-more {

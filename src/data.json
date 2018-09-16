@@ -104,6 +104,35 @@
             }
         ]
     },
+    "industries": {
+        "title": "Industries",
+        "items": [
+            {
+                "title": "Travelling & Hospitality",
+                "image": "travelling"
+            },
+            {
+                "title": "Media & Entertainment",
+                "image": "media"
+            },
+            {
+                "title": "E-Commerce",
+                "image": "ecommerce"
+            },
+            {
+                "title": "Healthcare",
+                "image": "healthcare"
+            },
+            {
+                "title": "Retail & Distribution",
+                "image": "retail"
+            },
+            {
+                "title": "Education & HRM",
+                "image": "education"
+            }
+        ]
+    },
     "advantages": {
         "title": "Our Advantages",
         "items": [
