@@ -250,8 +250,8 @@ body {
 /*-- END INDUSTRIES --*/
 /*-- TECHNOLOGIES --*/
 .technologies-wrapper {
-  padding: 55px 0 50px;
-  background: url(../img/tech-bg.jpg) center center no-repeat;
+  padding: 40px 0 50px;
+  background: url(../img/tech-bg.jpg) center 0 no-repeat;
   background-size: cover;
 }
 .technologies-group {
@@ -266,15 +266,11 @@ body {
 }
 .technologies-list {
   width: 100%;
-  margin: 0 65px;
-  list-style: none;
-}
-.technologies-list-wrapper {
-  padding-top: 60px;
-  padding-bottom: 30px;
+  padding: 60px 65px 30px;
   border-radius: 5px;
   background-color: rgba(255, 255, 255, 0.7);
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  list-style: none;
 }
 .technologies-list__item {
   margin: 0 10px 25px;
