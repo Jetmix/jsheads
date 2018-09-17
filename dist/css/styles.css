@@ -22,6 +22,9 @@ body {
   font-size: 16px;
   background-color: #fff;
 }
+.mb-0 {
+  margin-bottom: 0 !important;
+}
 .container {
   height: auto;
   max-width: 1110px;
@@ -245,6 +248,38 @@ body {
   text-transform: uppercase;
 }
 /*-- END INDUSTRIES --*/
+/*-- TECHNOLOGIES --*/
+.technologies-wrapper {
+  padding: 55px 0 50px;
+  background: url(../img/tech-bg.jpg) center center no-repeat;
+  background-size: cover;
+}
+.technologies-group {
+  margin-bottom: 35px;
+}
+.technologies__title {
+  font-family: 'BrandonGrotesque Medium';
+  text-transform: uppercase;
+  text-align: center;
+  margin-bottom: 12px;
+  font-size: 30px;
+}
+.technologies-list {
+  width: 100%;
+  margin: 0 65px;
+  list-style: none;
+}
+.technologies-list-wrapper {
+  padding-top: 60px;
+  padding-bottom: 30px;
+  border-radius: 5px;
+  background-color: rgba(255, 255, 255, 0.7);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+.technologies-list__item {
+  margin: 0 10px 25px;
+}
+/*-- END TECHNOLOGIES --*/
 /*-- LEARN MORE --*/
 .learn-more-wrapper {
   padding: 110px 0 75px;

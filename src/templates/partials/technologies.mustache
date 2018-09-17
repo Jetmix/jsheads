@@ -1,0 +1,28 @@
+<div class="technologies">
+    <div class="container">
+        <div class="row">
+            <h2 class="sub-title sub-title--dark mb-0 col-sm-12">{{title}}</h2>
+        </div>
+    </div>
+
+    <div class="technologies-wrapper">
+        <div class="container">
+            {{# items}}
+            <div class="technologies-group">
+                <div class="row">
+                    <h2 class="technologies__title sub-title--dark col-sm-12">{{title}}</h2>
+                </div>
+                <div class="technologies-list-wrapper row">
+                    <ul class="technologies-list d-flex flex-wrap justify-content-between align-items-center">
+                        {{# data}}
+                        <li class="technologies-list__item">
+                            <img src="/img/technologies/{{.}}.png" alt="{{.}}" class="technologies__image">
+                        </li>
+                        {{/ data}}
+                    </ul>
+                </div>
+            </div>
+            {{/ items}}
+        </div>
+    </div>
+</div>

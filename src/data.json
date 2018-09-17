@@ -133,6 +133,47 @@
             }
         ]
     },
+    "technologies": {
+        "title": "Technologies",
+        "items": [
+            {
+                "title": "Front-end",
+                "data": [
+                    "html",
+                    "css",
+                    "js",
+                    "angular",
+                    "react",
+                    "ajax",
+                    "jquery"
+                ]
+            },
+            {
+                "title": "Back-end",
+                "data": [
+                    "nodejs",
+                    "express",
+                    "asp",
+                    "webapi",
+                    "dotnet"
+                ]
+            },
+            {
+                "title": "Databases",
+                "data": [
+                    "oracle",
+                    "elasticsearch",
+                    "postgresql",
+                    "sqlserver",
+                    "mysql",
+                    "redis",
+                    "cloudant",
+                    "tsql",
+                    "mongodb"
+                ]
+            }
+        ]
+    },
     "advantages": {
         "title": "Our Advantages",
         "items": [
