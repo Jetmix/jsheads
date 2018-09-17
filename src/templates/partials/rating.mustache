@@ -1,0 +1,16 @@
+<div class="rating-wrapper">
+    <div class="container">
+        <div class="row">
+            <h2 class="rating__title small-title sub-title--dark col-sm-12">{{title}}</h2>
+        </div>
+        
+        <ul id="canvas" class="rating-list row">
+            {{# items}}
+            <li class="rating-elem-container col-xs-6 col-md-2">
+                <div id="rating-{{id}}" class="rating-elem" data-title="{{title}}" data-value="{{value}}"></div>
+                <p class="rating-elem__title">{{title}}</p>
+            </li>
+            {{/ items}}
+        </ul>
+    </div>
+</div>

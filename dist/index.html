@@ -249,7 +249,7 @@
         <div class="container">
             <div class="technologies-group">
                 <div class="row">
-                    <h2 class="technologies__title sub-title--dark col-sm-12">Front-end</h2>
+                    <h2 class="technologies__title small-title sub-title--dark col-sm-12">Front-end</h2>
                 </div>
                 <div class="technologies-list-wrapper row">
                     <div class="col-sm-12">
@@ -281,7 +281,7 @@
             </div>
             <div class="technologies-group">
                 <div class="row">
-                    <h2 class="technologies__title sub-title--dark col-sm-12">Back-end</h2>
+                    <h2 class="technologies__title small-title sub-title--dark col-sm-12">Back-end</h2>
                 </div>
                 <div class="technologies-list-wrapper row">
                     <div class="col-sm-12">
@@ -307,7 +307,7 @@
             </div>
             <div class="technologies-group">
                 <div class="row">
-                    <h2 class="technologies__title sub-title--dark col-sm-12">Databases</h2>
+                    <h2 class="technologies__title small-title sub-title--dark col-sm-12">Databases</h2>
                 </div>
                 <div class="technologies-list-wrapper row">
                     <div class="col-sm-12">
@@ -344,6 +344,40 @@
                 </div>
             </div>
         </div>
+    </div>
+</div>
+<div class="rating-wrapper">
+    <div class="container">
+        <div class="row">
+            <h2 class="rating__title small-title sub-title--dark col-sm-12">How our customers rate us</h2>
+        </div>
+        
+        <ul id="canvas" class="rating-list row">
+            <li class="rating-elem-container col-xs-6 col-md-2">
+                <div id="rating-recommend" class="rating-elem" data-title="recommend" data-value="94"></div>
+                <p class="rating-elem__title">recommend</p>
+            </li>
+            <li class="rating-elem-container col-xs-6 col-md-2">
+                <div id="rating-satisfaction" class="rating-elem" data-title="satisfaction" data-value="100"></div>
+                <p class="rating-elem__title">satisfaction</p>
+            </li>
+            <li class="rating-elem-container col-xs-6 col-md-2">
+                <div id="rating-quality" class="rating-elem" data-title="quality of products" data-value="78"></div>
+                <p class="rating-elem__title">quality of products</p>
+            </li>
+            <li class="rating-elem-container col-xs-6 col-md-2">
+                <div id="rating-value" class="rating-elem" data-title="value received" data-value="72"></div>
+                <p class="rating-elem__title">value received</p>
+            </li>
+            <li class="rating-elem-container col-xs-6 col-md-2">
+                <div id="rating-needs" class="rating-elem" data-title="ability to meet needs" data-value="78"></div>
+                <p class="rating-elem__title">ability to meet needs</p>
+            </li>
+            <li class="rating-elem-container col-xs-6 col-md-2">
+                <div id="rating-competency" class="rating-elem" data-title="technical competency" data-value="74"></div>
+                <p class="rating-elem__title">technical competency</p>
+            </li>
+        </ul>
     </div>
 </div>
 <div class="items-list-wrapper">
@@ -517,6 +551,8 @@
         </div>
     </div>
 </footer>
+        <script src="/js/jquery-3.3.1.min.js"></script>
+        <script src="/js/circles.min.js"></script>
         <script src="/js/main.js"></script>
     </body>
 </html>

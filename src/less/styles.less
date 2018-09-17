@@ -49,6 +49,12 @@ body {
   }
 }
 
+.small-title {
+  .title;
+
+  font-size: 30px;
+}
+
 .sub-title {
   margin-bottom: 40px; 
   .title;
@@ -285,10 +291,7 @@ body {
   }
 
   &__title {
-    .title;
-
     margin-bottom: 12px;
-    font-size: 30px;
   }
 
   &-list {
@@ -305,6 +308,45 @@ body {
   }
 }
 /*-- END TECHNOLOGIES --*/
+
+/*-- RATING --*/
+.rating {
+  &-wrapper {
+    padding: 45px 0;
+    background-color: @background-rating;
+
+    .circles {
+      &-wrp > svg {
+        border-radius: 50%;
+        background-color: @background-start;
+      }
+      
+      &-text {
+        color: @subtitle;
+      }
+    }
+  }
+
+  &__title {
+    margin-bottom: 40px;
+  }
+
+  &-list {
+    list-style: none;
+  }
+
+  &-elem {
+    margin-bottom: 10px;
+    
+    &__title {
+      font-size: 16px;
+      text-align: center;
+      text-transform: uppercase;
+      color: @color-subheader-1;
+    }
+  }
+}
+/*-- END RATING --*/
 
 /*-- LEARN MORE --*/
 .learn-more {
