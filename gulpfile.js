@@ -1,4 +1,5 @@
 var gulp = require('gulp');
+var gulpif = require('gulp-if');
 var mustache = require("gulp-mustache");
 var less = require('gulp-less');
 var concat = require("gulp-concat");
@@ -8,6 +9,10 @@ var spritesmith = require('gulp.spritesmith');
 var plumber = require('gulp-plumber');
 var browserSync = require('browser-sync');
 var reload = browserSync.reload;
+
+function isProd() {
+	return process.env === 'production';
+}
 
 gulp.task('browserSync', function() {
 	browserSync({
@@ -27,7 +32,7 @@ gulp.task('mustache', function() {
 		.pipe(reload({stream:true}));
 });
 
-gulp.task('scripts', function(){
+gulp.task('scripts', function() {
 	gulp.src([
 		'./src/js/jquery/*.js',
 		'./src/js/plugins/*.js',
@@ -35,7 +40,7 @@ gulp.task('scripts', function(){
 	])
 		.pipe(concat('bundle.js'))
         .pipe(rename({suffix: '.min'}))
-        .pipe(uglify())
+        .pipe(gulpif(isProd(), uglify()))
 		.pipe(gulp.dest('./dist/js'))
 		.pipe(reload({stream:true}));
 });
