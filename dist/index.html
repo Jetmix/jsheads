@@ -31,7 +31,7 @@
                     <a href="" class="header-nav__item">Solutions</a>
                     <a href="" class="header-nav__item">Industries</a>
                     <a href="" class="header-nav__item">Approach</a>
-                    <a href="" id="contactUs" class="header-nav__item header-nav__item--contacts">Contact Us</a>
+                    <a href="javascript:void(0);" id="contactUs" class="header-nav__item header-nav__item--contacts contact-us-btn">Contact Us</a>
                 </nav>
             </header>
             <div class="main-content">
@@ -443,7 +443,7 @@
             </div>
             <div class="row">
                 <div class="button-block center">
-                    <a href="" class="btn btn--main">Contact us</a>
+                    <a href="javascript:void(0);" class="btn btn--main contact-us-btn">Contact us</a>
                 </div>
             </div>
         </div>
@@ -554,6 +554,40 @@
             </div>
         </div>
     </footer>
+    <div class="overlay"></div>
+    <div class="modal">
+        <a href="javascript:void(0);" class="close"></a>
+
+        <form class="contacts" name="contacts" method="POST" action="/contacts">
+            <h2 class="contacts__title small-title sub-title--dark">Contact us</h2>
+            <div class="contacts__item row">
+                <div class="col-sm-12">
+                    <label class="contacts__label contacts__label">Name</label>
+                    <input type="text" name="name" class="contacts__input col-sm-12" />
+                </div>
+            </div>
+
+            <div class="contacts__item row">
+                <div class="col-sm-12">
+                    <label class="contacts__label">Email</label>
+                    <input type="text" name="email" class="contacts__input col-sm-12" />
+                </div>
+            </div>
+
+            <div class="contacts__item row">
+                <div class="col-sm-12">
+                    <label class="contacts__label">Message</label>
+                    <textarea name="message" class="contacts__input contacts__input--textarea col-sm-12"></textarea>
+                </div>
+            </div>
+
+            <div class="contacts__item row">
+                <div class="col-sm-12">
+                    <input type="submit" class="btn btn--main contacts__btn" value="Send" />
+                </div>
+            </div>
+        </form>
+    </div>
     <script src="/js/bundle.min.js"></script>
 </body>
 
