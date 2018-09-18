@@ -3,6 +3,8 @@ var gulpif = require('gulp-if');
 var mustache = require("gulp-mustache");
 var prettyHtml = require('gulp-pretty-html');
 var less = require('gulp-less');
+var cleanCSS = require('gulp-clean-css');
+var sourcemaps = require('gulp-sourcemaps');
 var concat = require("gulp-concat");
 var rename = require("gulp-rename");
 var uglify = require("gulp-uglify");
@@ -75,6 +77,9 @@ gulp.task('styles', ['less'], function () {
 	])
 		.pipe(concat('bundle.css'))
 		.pipe(rename({suffix: '.min'}))
+		.pipe(sourcemaps.init())
+		.pipe(cleanCSS())
+		.pipe(sourcemaps.write())
 		.pipe(gulp.dest('./dist/css'))
 		.pipe(reload({stream:true}));
 });
