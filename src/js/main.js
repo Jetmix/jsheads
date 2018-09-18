@@ -31,7 +31,7 @@ function initRating() {
         if (!ratingElementCreated && elementInViewport($canvas)) {
             ratingElementCreated = true;
 
-            createRatings();
+            updateValue();
         }
     }
 
@@ -41,7 +41,7 @@ function initRating() {
         return (
             rect.top  >= 0 &&
             rect.left >= 0 &&
-            rect.top  <= (window.innerHeight || document.documentElement.clientHeight)
+            rect.top + 100  <= (window.innerHeight || document.documentElement.clientHeight)
         );
     }
 
@@ -51,14 +51,11 @@ function initRating() {
 
     function createRatings() {
         $('.rating-elem').each(function(idx, elem) {
-            var value = $(elem).data('value');
-
             var ratingElement = Circles.create({
                 id: elem.id,
-                value: value,
                 radius: calcElemRadius(elem),
                 width: 8,
-                text: value + '%',
+                text: $(elem).data('value') + '%',
                 colors: ['#477593','#fdc839']
             });
 
@@ -66,11 +63,25 @@ function initRating() {
         });
     }
 
-    function updateWidth() {
-        $('#canvas > .rating-elem-container').each(function(index, elem) {
-            ratingElements[index].updateRadius(calcElemRadius(elem));
+    function updateValue() {
+        $('#canvas > .rating-elem-container > .rating-elem').each(function(index, elem) {
+            if (ratingElements.length && ratingElements[index]) {
+
+                console.log($(elem).data('value'));
+                ratingElements[index].update($(elem).data('value'), 400);
+            }
         });
     }
+
+    function updateWidth() {
+        $('#canvas > .rating-elem-container').each(function(index, elem) {
+            if (ratingElements.length && ratingElements[index]) {
+                ratingElements[index].updateRadius(calcElemRadius(elem));
+            }
+        });
+    }
+
+    createRatings();
 
     $(window).on('scroll', handleScroll);
     $(window).on('resize', updateWidth);
