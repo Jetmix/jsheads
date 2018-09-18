@@ -1,6 +1,7 @@
 var gulp = require('gulp');
 var gulpif = require('gulp-if');
 var mustache = require("gulp-mustache");
+var prettyHtml = require('gulp-pretty-html');
 var less = require('gulp-less');
 var concat = require("gulp-concat");
 var rename = require("gulp-rename");
@@ -28,6 +29,7 @@ gulp.task('browserSync', function() {
 gulp.task('mustache', function() {
 	gulp.src('./src/templates/*.mustache')
 		.pipe(mustache('./src/data.json', {extension: '.html'}, {}))
+		.pipe(prettyHtml())
 		.pipe(gulp.dest("./dist"))
 		.pipe(reload({stream:true}));
 });
