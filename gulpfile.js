@@ -1,7 +1,9 @@
 var gulp = require('gulp');
 var mustache = require("gulp-mustache");
 var less = require('gulp-less');
+var concat = require("gulp-concat");
 var rename = require("gulp-rename");
+var uglify = require("gulp-uglify");
 var spritesmith = require('gulp.spritesmith');
 var plumber = require('gulp-plumber');
 var browserSync = require('browser-sync');
@@ -26,7 +28,14 @@ gulp.task('mustache', function() {
 });
 
 gulp.task('scripts', function(){
-	gulp.src('./src/js/*.js')
+	gulp.src([
+		'./src/js/jquery/*.js',
+		'./src/js/plugins/*.js',
+		'./src/js/main.js',
+	])
+		.pipe(concat('bundle.js'))
+        .pipe(rename({suffix: '.min'}))
+        .pipe(uglify())
 		.pipe(gulp.dest('./dist/js'))
 		.pipe(reload({stream:true}));
 });
@@ -48,12 +57,17 @@ gulp.task('less', function () {
 		.pipe(rename(function (path) {
 			path.basename = "styles";
 		}))
-		.pipe(gulp.dest('./dist/css'))
+		.pipe(gulp.dest('./temp/css'))
 		.pipe(reload({stream:true}));
 });
 
-gulp.task('styles', function () {
-	gulp.src('./src/vendor/*.css')
+gulp.task('styles', ['less'], function () {
+	gulp.src([
+		'./src/vendor/*.css',
+		'./temp/css/*.css'
+	])
+		.pipe(concat('bundle.css'))
+		.pipe(rename({suffix: '.min'}))
 		.pipe(gulp.dest('./dist/css'))
 		.pipe(reload({stream:true}));
 });
@@ -83,7 +97,7 @@ gulp.task('watcher', function() {
 	gulp.watch('src/*.json', ['mustache']);
 	gulp.watch('src/**/*.mustache', ['mustache']);
 	gulp.watch('src/**/*.js', ['scripts']);
-	gulp.watch('src/**/*.less', ['less']);
+	gulp.watch('src/**/*.less', ['styles']);
 });
 
 gulp.task('build', [
@@ -91,14 +105,13 @@ gulp.task('build', [
 	'images',
 	'sprite',
 	'fonts',
-	'less',
+	'styles',
 	'scripts'
 ]);
 
 gulp.task('default', [
 	'mustache',
 	'sprite',
-	'less',
 	'styles',
 	'scripts',
 	'browserSync',

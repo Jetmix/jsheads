@@ -11,11 +11,13 @@
   "devDependencies": {
     "browser-sync": "^2.24.7",
     "gulp": "^3.9.1",
+    "gulp-concat": "^2.6.1",
     "gulp-less": "^4.0.1",
     "gulp-mustache": "^3.0.1",
     "gulp-plumber": "^1.2.0",
     "gulp-rename": "^1.4.0",
     "gulp-svg-sprites": "^4.1.2",
+    "gulp-uglify": "^3.0.1",
     "gulp.spritesmith": "^6.9.0",
     "nodemon": "^1.18.4"
   },
