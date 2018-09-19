@@ -1,0 +1,11 @@
+{
+    "email": {
+        "host": "xxx.xxx.com",
+        "port": 25,
+        "user": "xxx@xxx.com",
+        "password": "password",
+        "from": "no-reply@xxx.com ",
+        "to": "sales@xxx.com",
+        "subject": "xxx.com - Contact us form"
+    }
+}

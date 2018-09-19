@@ -7,21 +7,38 @@
         <div class="contacts__item row">
             <div class="col-sm-12">
                 <label class="contacts__label contacts__label">Name</label>
-                <input type="text" name="name" class="contacts__input col-sm-12" />
+                <input
+                    type="text"
+                    name="name"
+                    class="contacts__input col-sm-12"
+                    data-validation="length alphanumeric"
+                    data-validation-length="min4"
+                    data-validation-allowing="-_ "
+                />
             </div>
         </div>
 
         <div class="contacts__item row">
             <div class="col-sm-12">
                 <label class="contacts__label">Email</label>
-                <input type="text" name="email" class="contacts__input col-sm-12" />
+                <input
+                    type="text"
+                    name="email"
+                    class="contacts__input col-sm-12"
+                     data-validation="email"
+                />
             </div>
         </div>
 
         <div class="contacts__item row">
             <div class="col-sm-12">
                 <label class="contacts__label">Message</label>
-                <textarea name="message" class="contacts__input contacts__input--textarea col-sm-12"></textarea>
+                <textarea
+                    name="message"
+                    class="contacts__input contacts__input--textarea col-sm-12"
+                    data-validation="alphanumeric"
+                    data-validation-allowing="-_"
+                ></textarea>
             </div>
         </div>
 

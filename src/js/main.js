@@ -110,9 +110,48 @@ function initContacts() {
     modalCloseBtn.on('click', closeModal);
 }
 
+function initFormValidation() {
+    $.validate({
+        lang: 'es',
+        modules: 'security'
+    });
+}
+
+function initContactForm() {
+    var contactForm = $('form.contacts');
+    var fieldName = $('form.contacts [name="name"]');
+    var fieldEmail = $('form.contacts [name="email"]');
+    var fieldMessage = $('form.contacts [name="message"]');
+
+    function handleFormSubmit(e) {
+        e.preventDefault();
+
+        $.ajax({
+            method: "POST",
+            url: "/contacts",
+            data: {
+                name: fieldName.val(),
+                email: fieldEmail.val(),
+                message: fieldMessage.val()
+            }
+        })
+        .done(function(data) {
+            // TODO: handle response
+            console.log(data);
+        })
+        .fail(function(data, status ) {
+            //TODO: handle response
+        });
+    }
+
+    contactForm.on('submit', handleFormSubmit);
+}
+
 function handlePageLoaded() {
     initToggler('menuToggler', 'header-nav', 'header-nav--visible');
 
     initRating();
     initContacts();
+    initFormValidation();
+    initContactForm();
 }
