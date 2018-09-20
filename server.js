@@ -4,6 +4,7 @@ const express = require('express');
 const nodeMailer = require('nodemailer');
 const bodyParser = require('body-parser');
 const winston = require('winston');
+const expressWinston = require('express-winston');
 const { check, validationResult } = require('express-validator/check');
 const { matchedData } = require('express-validator/filter');
 
@@ -28,6 +29,18 @@ const logger = winston.createLogger({
       format: winston.format.simple()
     }));
   }
+
+app.use(expressWinston.logger({
+    transports: [
+        new winston.transports.File({ filename: 'error.log', level: 'error' }),
+        new winston.transports.File({ filename: 'combined.log' })
+    ],
+    meta: true,
+    msg: "HTTP {{req.method}} {{req.url}}",
+    expressFormat: true,
+    colorize: false,
+    ignoreRoute: function (req, res) { return false; }
+}));
 
 app.use(express.static(PUBLIC_PATH));
 app.use(bodyParser.urlencoded({extended: true}));
@@ -96,6 +109,8 @@ app.post('/contacts', [
                 console.log(err);
 
                 data = 'Error! Message hasn\'t been sent.';
+                res.status(err.responseCode).send({ data, error: err.response });
+                return;
             }
             
             data = 'Message has been successfully sent.';
