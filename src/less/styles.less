@@ -157,6 +157,17 @@ body {
       .gradient(left, @btn-start, @btn-stop);
     }
   }
+
+  &--border {
+    border: 2px solid @tags-bg;
+    color: @tags-bg;
+    box-shadow: none;
+
+    &:hover {
+      border-color: darken(@tags-bg, 10%);
+      color: darken(@tags-bg, 10%);
+    }
+  }
 }
 
 /*-- HEADER --*/
@@ -748,3 +759,80 @@ body {
   }
 }
 /*-- END CONTACTS --*/
+
+/*-- SELECTED --*/
+.selected {
+  &-wrapper {
+    margin: 60px 0;
+  }
+
+  &-list {
+    margin-bottom: 35px;
+    list-style: none;
+  }
+
+  &-elem {
+    &__link {
+      display: block;
+      height: 100%;
+      width: 100%;
+      text-decoration: none;
+    }
+
+    &-image {
+      display: block;
+      width: 100%;
+      max-height: 100%;
+      max-width: 100%;
+      border-radius: 5px;
+
+      &-wrapper {
+        position: relative;
+        margin-bottom: 10px;
+        border-radius: 5px;
+      }
+
+      &__overlay {
+        display: block;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        border-radius: 5px;
+        box-shadow: inset 0 2px 2px rgba(255, 255, 255, .7);
+      }
+    }
+
+    &__title {
+      font-size: 20px;
+      text-align: center;
+      text-transform: uppercase;
+      color: @color-subheader-1;
+    }
+
+    &:hover {
+      .selected-elem-image-wrapper {
+        box-shadow: 0 0 50px rgba(0, 0, 0, 0.4);
+      }
+    }
+  }
+}
+
+.tags-list {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  padding: 0 7px 14px;
+
+  &__item {
+    margin: 0 7px;
+    padding: 1px 8px 2px;
+    border-radius: 4px;
+    font-size: 16px;
+    text-transform: uppercase;
+    background-color: @tags-bg;
+    color: @tags-text;
+  }
+}
+/*-- END SELECTED --*/

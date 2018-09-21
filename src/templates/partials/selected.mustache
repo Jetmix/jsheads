@@ -1,0 +1,31 @@
+<div class="selected-wrapper">
+    <div class="container">
+        <div class="row">
+            <h2 class="sub-title sub-title--dark col-sm-12">{{title}}</h2>
+        </div>
+        
+        <ul class="selected-list row">
+            {{# items}}
+            <li class="selected-elem col-xs-12 col-md-4">
+                <a href="" class="selected-elem__link">
+                    <div class="selected-elem-image-wrapper">
+                        <img class="selected-elem-image" src="/img/{{image}}.jpg" alt="">
+                        <div class="selected-elem-image__overlay"></div>
+                        <div class="tags-list d-flex">
+                            {{# tags}}
+                            <div class="tags-list__item">{{.}}</div>
+                            {{/ tags}}
+                        </div>
+                    </div>
+                    <p class="selected-elem__title">{{title}}</p>
+                    <p class="selected-elem__title">{{type}}</p>
+                </a>
+            </li>
+            {{/ items}}
+        </ul>
+
+        <div class="row button-block center">
+            <a href="" class="btn btn--border center">More cases</a>
+        </div>
+    </div>
+</div>
