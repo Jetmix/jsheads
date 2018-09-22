@@ -7,7 +7,9 @@
         <ul class="items-list row">
             {{# items}}
             <li class="items-list-elem col-sm-12 col-md-6 d-flex">
-                <i class="icon items-list-elem__icon">{{icon}}</i>
+                <div class="items-list-elem__icon"> 
+                    <i class="icon icon-{{icon}}"></i>
+                </div>
                 <div class="items-list-elem-info">
                     <h3 class="items-list-elem__title">{{title}}</h3>
                     <div class="items-list-elem__description">{{description}}</div>

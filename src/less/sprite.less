@@ -1,0 +1,385 @@
+/*
+LESS variables are information about icon's compiled state, stored under its original file name
+
+.icon-home {
+  width: @icon-home-width;
+}
+
+The large array-like variables contain all information about a single icon
+@icon-home: x y offset_x offset_y width height total_width total_height image_path name;
+
+At the bottom of this section, we provide information about the spritesheet itself
+@spritesheet: width height image @spritesheet-sprites;
+*/
+@icon-advantage-communication-name: 'icon-advantage-communication';
+@icon-advantage-communication-x: 878px;
+@icon-advantage-communication-y: 876px;
+@icon-advantage-communication-offset-x: -878px;
+@icon-advantage-communication-offset-y: -876px;
+@icon-advantage-communication-width: 64px;
+@icon-advantage-communication-height: 64px;
+@icon-advantage-communication-total-width: 1697px;
+@icon-advantage-communication-total-height: 1649px;
+@icon-advantage-communication-image: '../img/sprite.png';
+@icon-advantage-communication: 878px 876px -878px -876px 64px 64px 1697px 1649px '../img/sprite.png' 'icon-advantage-communication';
+@icon-advantage-cost-name: 'icon-advantage-cost';
+@icon-advantage-cost-x: 942px;
+@icon-advantage-cost-y: 940px;
+@icon-advantage-cost-offset-x: -942px;
+@icon-advantage-cost-offset-y: -940px;
+@icon-advantage-cost-width: 64px;
+@icon-advantage-cost-height: 64px;
+@icon-advantage-cost-total-width: 1697px;
+@icon-advantage-cost-total-height: 1649px;
+@icon-advantage-cost-image: '../img/sprite.png';
+@icon-advantage-cost: 942px 940px -942px -940px 64px 64px 1697px 1649px '../img/sprite.png' 'icon-advantage-cost';
+@icon-advantage-customer-name: 'icon-advantage-customer';
+@icon-advantage-customer-x: 643px;
+@icon-advantage-customer-y: 633px;
+@icon-advantage-customer-offset-x: -643px;
+@icon-advantage-customer-offset-y: -633px;
+@icon-advantage-customer-width: 48px;
+@icon-advantage-customer-height: 64px;
+@icon-advantage-customer-total-width: 1697px;
+@icon-advantage-customer-total-height: 1649px;
+@icon-advantage-customer-image: '../img/sprite.png';
+@icon-advantage-customer: 643px 633px -643px -633px 48px 64px 1697px 1649px '../img/sprite.png' 'icon-advantage-customer';
+@icon-advantage-cycle-name: 'icon-advantage-cycle';
+@icon-advantage-cycle-x: 1006px;
+@icon-advantage-cycle-y: 1004px;
+@icon-advantage-cycle-offset-x: -1006px;
+@icon-advantage-cycle-offset-y: -1004px;
+@icon-advantage-cycle-width: 64px;
+@icon-advantage-cycle-height: 64px;
+@icon-advantage-cycle-total-width: 1697px;
+@icon-advantage-cycle-total-height: 1649px;
+@icon-advantage-cycle-image: '../img/sprite.png';
+@icon-advantage-cycle: 1006px 1004px -1006px -1004px 64px 64px 1697px 1649px '../img/sprite.png' 'icon-advantage-cycle';
+@icon-advantage-flex-name: 'icon-advantage-flex';
+@icon-advantage-flex-x: 814px;
+@icon-advantage-flex-y: 816px;
+@icon-advantage-flex-offset-x: -814px;
+@icon-advantage-flex-offset-y: -816px;
+@icon-advantage-flex-width: 64px;
+@icon-advantage-flex-height: 60px;
+@icon-advantage-flex-total-width: 1697px;
+@icon-advantage-flex-total-height: 1649px;
+@icon-advantage-flex-image: '../img/sprite.png';
+@icon-advantage-flex: 814px 816px -814px -816px 64px 60px 1697px 1649px '../img/sprite.png' 'icon-advantage-flex';
+@icon-advantage-team-name: 'icon-advantage-team';
+@icon-advantage-team-x: 755px;
+@icon-advantage-team-y: 752px;
+@icon-advantage-team-offset-x: -755px;
+@icon-advantage-team-offset-y: -752px;
+@icon-advantage-team-width: 59px;
+@icon-advantage-team-height: 64px;
+@icon-advantage-team-total-width: 1697px;
+@icon-advantage-team-total-height: 1649px;
+@icon-advantage-team-image: '../img/sprite.png';
+@icon-advantage-team: 755px 752px -755px -752px 59px 64px 1697px 1649px '../img/sprite.png' 'icon-advantage-team';
+@icon-arrow-left-name: 'icon-arrow-left';
+@icon-arrow-left-x: 29px;
+@icon-arrow-left-y: 21px;
+@icon-arrow-left-offset-x: -29px;
+@icon-arrow-left-offset-y: -21px;
+@icon-arrow-left-width: 26px;
+@icon-arrow-left-height: 30px;
+@icon-arrow-left-total-width: 1697px;
+@icon-arrow-left-total-height: 1649px;
+@icon-arrow-left-image: '../img/sprite.png';
+@icon-arrow-left: 29px 21px -29px -21px 26px 30px 1697px 1649px '../img/sprite.png' 'icon-arrow-left';
+@icon-arrow-right-name: 'icon-arrow-right';
+@icon-arrow-right-x: 55px;
+@icon-arrow-right-y: 51px;
+@icon-arrow-right-offset-x: -55px;
+@icon-arrow-right-offset-y: -51px;
+@icon-arrow-right-width: 26px;
+@icon-arrow-right-height: 30px;
+@icon-arrow-right-total-width: 1697px;
+@icon-arrow-right-total-height: 1649px;
+@icon-arrow-right-image: '../img/sprite.png';
+@icon-arrow-right: 55px 51px -55px -51px 26px 30px 1697px 1649px '../img/sprite.png' 'icon-arrow-right';
+@icon-arrow-name: 'icon-arrow';
+@icon-arrow-x: 0px;
+@icon-arrow-y: 0px;
+@icon-arrow-offset-x: 0px;
+@icon-arrow-offset-y: 0px;
+@icon-arrow-width: 29px;
+@icon-arrow-height: 21px;
+@icon-arrow-total-width: 1697px;
+@icon-arrow-total-height: 1649px;
+@icon-arrow-image: '../img/sprite.png';
+@icon-arrow: 0px 0px 0px 0px 29px 21px 1697px 1649px '../img/sprite.png' 'icon-arrow';
+@icon-logo-small-name: 'icon-logo-small';
+@icon-logo-small-x: 81px;
+@icon-logo-small-y: 81px;
+@icon-logo-small-offset-x: -81px;
+@icon-logo-small-offset-y: -81px;
+@icon-logo-small-width: 37px;
+@icon-logo-small-height: 36px;
+@icon-logo-small-total-width: 1697px;
+@icon-logo-small-total-height: 1649px;
+@icon-logo-small-image: '../img/sprite.png';
+@icon-logo-small: 81px 81px -81px -81px 37px 36px 1697px 1649px '../img/sprite.png' 'icon-logo-small';
+@icon-service-dedicated-name: 'icon-service-dedicated';
+@icon-service-dedicated-x: 1444px;
+@icon-service-dedicated-y: 1467px;
+@icon-service-dedicated-offset-x: -1444px;
+@icon-service-dedicated-offset-y: -1467px;
+@icon-service-dedicated-width: 128px;
+@icon-service-dedicated-height: 88px;
+@icon-service-dedicated-total-width: 1697px;
+@icon-service-dedicated-total-height: 1649px;
+@icon-service-dedicated-image: '../img/sprite.png';
+@icon-service-dedicated: 1444px 1467px -1444px -1467px 128px 88px 1697px 1649px '../img/sprite.png' 'icon-service-dedicated';
+@icon-service-desktop-name: 'icon-service-desktop';
+@icon-service-desktop-x: 1316px;
+@icon-service-desktop-y: 1385px;
+@icon-service-desktop-offset-x: -1316px;
+@icon-service-desktop-offset-y: -1385px;
+@icon-service-desktop-width: 128px;
+@icon-service-desktop-height: 82px;
+@icon-service-desktop-total-width: 1697px;
+@icon-service-desktop-total-height: 1649px;
+@icon-service-desktop-image: '../img/sprite.png';
+@icon-service-desktop: 1316px 1385px -1316px -1385px 128px 82px 1697px 1649px '../img/sprite.png' 'icon-service-desktop';
+@icon-service-mobile-name: 'icon-service-mobile';
+@icon-service-mobile-x: 1070px;
+@icon-service-mobile-y: 1068px;
+@icon-service-mobile-offset-x: -1070px;
+@icon-service-mobile-offset-y: -1068px;
+@icon-service-mobile-width: 60px;
+@icon-service-mobile-height: 102px;
+@icon-service-mobile-total-width: 1697px;
+@icon-service-mobile-total-height: 1649px;
+@icon-service-mobile-image: '../img/sprite.png';
+@icon-service-mobile: 1070px 1068px -1070px -1068px 60px 102px 1697px 1649px '../img/sprite.png' 'icon-service-mobile';
+@icon-service-qa-name: 'icon-service-qa';
+@icon-service-qa-x: 1130px;
+@icon-service-qa-y: 1170px;
+@icon-service-qa-offset-x: -1130px;
+@icon-service-qa-offset-y: -1170px;
+@icon-service-qa-width: 85px;
+@icon-service-qa-height: 113px;
+@icon-service-qa-total-width: 1697px;
+@icon-service-qa-total-height: 1649px;
+@icon-service-qa-image: '../img/sprite.png';
+@icon-service-qa: 1130px 1170px -1130px -1170px 85px 113px 1697px 1649px '../img/sprite.png' 'icon-service-qa';
+@icon-service-startups-name: 'icon-service-startups';
+@icon-service-startups-x: 1572px;
+@icon-service-startups-y: 1555px;
+@icon-service-startups-offset-x: -1572px;
+@icon-service-startups-offset-y: -1555px;
+@icon-service-startups-width: 125px;
+@icon-service-startups-height: 94px;
+@icon-service-startups-total-width: 1697px;
+@icon-service-startups-total-height: 1649px;
+@icon-service-startups-image: '../img/sprite.png';
+@icon-service-startups: 1572px 1555px -1572px -1555px 125px 94px 1697px 1649px '../img/sprite.png' 'icon-service-startups';
+@icon-service-web-name: 'icon-service-web';
+@icon-service-web-x: 1215px;
+@icon-service-web-y: 1283px;
+@icon-service-web-offset-x: -1215px;
+@icon-service-web-offset-y: -1283px;
+@icon-service-web-width: 101px;
+@icon-service-web-height: 102px;
+@icon-service-web-total-width: 1697px;
+@icon-service-web-total-height: 1649px;
+@icon-service-web-image: '../img/sprite.png';
+@icon-service-web: 1215px 1283px -1215px -1283px 101px 102px 1697px 1649px '../img/sprite.png' 'icon-service-web';
+@icon-social-fb-name: 'icon-social-fb';
+@icon-social-fb-x: 218px;
+@icon-social-fb-y: 217px;
+@icon-social-fb-offset-x: -218px;
+@icon-social-fb-offset-y: -217px;
+@icon-social-fb-width: 50px;
+@icon-social-fb-height: 50px;
+@icon-social-fb-total-width: 1697px;
+@icon-social-fb-total-height: 1649px;
+@icon-social-fb-image: '../img/sprite.png';
+@icon-social-fb: 218px 217px -218px -217px 50px 50px 1697px 1649px '../img/sprite.png' 'icon-social-fb';
+@icon-social-ig-name: 'icon-social-ig';
+@icon-social-ig-x: 168px;
+@icon-social-ig-y: 167px;
+@icon-social-ig-offset-x: -168px;
+@icon-social-ig-offset-y: -167px;
+@icon-social-ig-width: 50px;
+@icon-social-ig-height: 50px;
+@icon-social-ig-total-width: 1697px;
+@icon-social-ig-total-height: 1649px;
+@icon-social-ig-image: '../img/sprite.png';
+@icon-social-ig: 168px 167px -168px -167px 50px 50px 1697px 1649px '../img/sprite.png' 'icon-social-ig';
+@icon-social-twitter-name: 'icon-social-twitter';
+@icon-social-twitter-x: 118px;
+@icon-social-twitter-y: 117px;
+@icon-social-twitter-offset-x: -118px;
+@icon-social-twitter-offset-y: -117px;
+@icon-social-twitter-width: 50px;
+@icon-social-twitter-height: 50px;
+@icon-social-twitter-total-width: 1697px;
+@icon-social-twitter-total-height: 1649px;
+@icon-social-twitter-image: '../img/sprite.png';
+@icon-social-twitter: 118px 117px -118px -117px 50px 50px 1697px 1649px '../img/sprite.png' 'icon-social-twitter';
+@icon-solution-commerce-name: 'icon-solution-commerce';
+@icon-solution-commerce-x: 524px;
+@icon-solution-commerce-y: 536px;
+@icon-solution-commerce-offset-x: -524px;
+@icon-solution-commerce-offset-y: -536px;
+@icon-solution-commerce-width: 55px;
+@icon-solution-commerce-height: 52px;
+@icon-solution-commerce-total-width: 1697px;
+@icon-solution-commerce-total-height: 1649px;
+@icon-solution-commerce-image: '../img/sprite.png';
+@icon-solution-commerce: 524px 536px -524px -536px 55px 52px 1697px 1649px '../img/sprite.png' 'icon-solution-commerce';
+@icon-solution-documents-name: 'icon-solution-documents';
+@icon-solution-documents-x: 327px;
+@icon-solution-documents-y: 312px;
+@icon-solution-documents-offset-x: -327px;
+@icon-solution-documents-offset-y: -312px;
+@icon-solution-documents-width: 50px;
+@icon-solution-documents-height: 55px;
+@icon-solution-documents-total-width: 1697px;
+@icon-solution-documents-total-height: 1649px;
+@icon-solution-documents-image: '../img/sprite.png';
+@icon-solution-documents: 327px 312px -327px -312px 50px 55px 1697px 1649px '../img/sprite.png' 'icon-solution-documents';
+@icon-solution-mobility-name: 'icon-solution-mobility';
+@icon-solution-mobility-x: 484px;
+@icon-solution-mobility-y: 472px;
+@icon-solution-mobility-offset-x: -484px;
+@icon-solution-mobility-offset-y: -472px;
+@icon-solution-mobility-width: 40px;
+@icon-solution-mobility-height: 64px;
+@icon-solution-mobility-total-width: 1697px;
+@icon-solution-mobility-total-height: 1649px;
+@icon-solution-mobility-image: '../img/sprite.png';
+@icon-solution-mobility: 484px 472px -484px -472px 40px 64px 1697px 1649px '../img/sprite.png' 'icon-solution-mobility';
+@icon-solution-payment-name: 'icon-solution-payment';
+@icon-solution-payment-x: 430px;
+@icon-solution-payment-y: 420px;
+@icon-solution-payment-offset-x: -430px;
+@icon-solution-payment-offset-y: -420px;
+@icon-solution-payment-width: 54px;
+@icon-solution-payment-height: 52px;
+@icon-solution-payment-total-width: 1697px;
+@icon-solution-payment-total-height: 1649px;
+@icon-solution-payment-image: '../img/sprite.png';
+@icon-solution-payment: 430px 420px -430px -420px 54px 52px 1697px 1649px '../img/sprite.png' 'icon-solution-payment';
+@icon-solution-planning-name: 'icon-solution-planning';
+@icon-solution-planning-x: 377px;
+@icon-solution-planning-y: 367px;
+@icon-solution-planning-offset-x: -377px;
+@icon-solution-planning-offset-y: -367px;
+@icon-solution-planning-width: 53px;
+@icon-solution-planning-height: 53px;
+@icon-solution-planning-total-width: 1697px;
+@icon-solution-planning-total-height: 1649px;
+@icon-solution-planning-image: '../img/sprite.png';
+@icon-solution-planning: 377px 367px -377px -367px 53px 53px 1697px 1649px '../img/sprite.png' 'icon-solution-planning';
+@icon-solution-portals-name: 'icon-solution-portals';
+@icon-solution-portals-x: 691px;
+@icon-solution-portals-y: 697px;
+@icon-solution-portals-offset-x: -691px;
+@icon-solution-portals-offset-y: -697px;
+@icon-solution-portals-width: 64px;
+@icon-solution-portals-height: 55px;
+@icon-solution-portals-total-width: 1697px;
+@icon-solution-portals-total-height: 1649px;
+@icon-solution-portals-image: '../img/sprite.png';
+@icon-solution-portals: 691px 697px -691px -697px 64px 55px 1697px 1649px '../img/sprite.png' 'icon-solution-portals';
+@icon-solution-relations-name: 'icon-solution-relations';
+@icon-solution-relations-x: 579px;
+@icon-solution-relations-y: 588px;
+@icon-solution-relations-offset-x: -579px;
+@icon-solution-relations-offset-y: -588px;
+@icon-solution-relations-width: 64px;
+@icon-solution-relations-height: 45px;
+@icon-solution-relations-total-width: 1697px;
+@icon-solution-relations-total-height: 1649px;
+@icon-solution-relations-image: '../img/sprite.png';
+@icon-solution-relations: 579px 588px -579px -588px 64px 45px 1697px 1649px '../img/sprite.png' 'icon-solution-relations';
+@icon-solution-web-name: 'icon-solution-web';
+@icon-solution-web-x: 268px;
+@icon-solution-web-y: 267px;
+@icon-solution-web-offset-x: -268px;
+@icon-solution-web-offset-y: -267px;
+@icon-solution-web-width: 59px;
+@icon-solution-web-height: 45px;
+@icon-solution-web-total-width: 1697px;
+@icon-solution-web-total-height: 1649px;
+@icon-solution-web-image: '../img/sprite.png';
+@icon-solution-web: 268px 267px -268px -267px 59px 45px 1697px 1649px '../img/sprite.png' 'icon-solution-web';
+@spritesheet-width: 1697px;
+@spritesheet-height: 1649px;
+@spritesheet-image: '../img/sprite.png';
+@spritesheet-sprites: @icon-advantage-communication @icon-advantage-cost @icon-advantage-customer @icon-advantage-cycle @icon-advantage-flex @icon-advantage-team @icon-arrow-left @icon-arrow-right @icon-arrow @icon-logo-small @icon-service-dedicated @icon-service-desktop @icon-service-mobile @icon-service-qa @icon-service-startups @icon-service-web @icon-social-fb @icon-social-ig @icon-social-twitter @icon-solution-commerce @icon-solution-documents @icon-solution-mobility @icon-solution-payment @icon-solution-planning @icon-solution-portals @icon-solution-relations @icon-solution-web;
+@spritesheet: 1697px 1649px '../img/sprite.png' @spritesheet-sprites;
+
+/*
+The provided classes are intended to be used with the array-like variables
+
+.icon-home {
+  .sprite-width(@icon-home);
+}
+.icon-email {
+  .sprite(@icon-email);
+}
+
+Example usage in HTML:
+
+`display: block` sprite:
+<div class="icon-home"></div>
+
+To change `display` (e.g. `display: inline-block;`), we suggest using a common CSS class:
+
+// CSS
+.icon {
+  display: inline-block;
+}
+
+// HTML
+<i class="icon icon-home"></i>
+*/
+.sprite-width(@sprite) {
+  width: extract(@sprite, 5);
+}
+
+.sprite-height(@sprite) {
+  height: extract(@sprite, 6);
+}
+
+.sprite-position(@sprite) {
+  @sprite-offset-x: extract(@sprite, 3);
+  @sprite-offset-y: extract(@sprite, 4);
+  background-position: @sprite-offset-x @sprite-offset-y;
+}
+
+.sprite-image(@sprite) {
+  @sprite-image: extract(@sprite, 9);
+  @sprite-image-bare: ~`"@{sprite-image}".slice(1, -1)`;
+  background-image: url(@sprite-image-bare);
+}
+
+.sprite(@sprite) {
+  .sprite-image(@sprite);
+  .sprite-position(@sprite);
+  .sprite-width(@sprite);
+  .sprite-height(@sprite);
+}
+
+/*
+The `.sprites` mixin generates identical output to the CSS template
+  but can be overridden inside of LESS
+
+This must be run when you have at least 2 sprites.
+  If run with a single sprite, then there will be reference errors.
+
+.sprites(@spritesheet-sprites);
+*/
+.sprites(@sprites, @i: 1) when (@i <= length(@sprites)) {
+  @sprite: extract(@sprites, @i);
+  @sprite-name: e(extract(@sprite, 10));
+  .@{sprite-name} {
+    .sprite(@sprite);
+  }
+  .sprites(@sprites, @i + 1);
+}

@@ -175,9 +175,38 @@ function initContacts() {
     initContactForm();
 }
 
+function initSlider() {
+    $('.selected-list').slick({
+        centerMode: true,
+        centerPadding: '12px',
+        slidesToShow: 3,
+        responsive: [
+            {
+                breakpoint: 768,
+                settings: {
+                    arrows: false,
+                    centerMode: true,
+                    centerPadding: '12px',
+                    slidesToShow: 2
+                }
+            },
+            {
+                breakpoint: 480,
+                settings: {
+                    arrows: false,
+                    centerMode: true,
+                    centerPadding: '12px',
+                    slidesToShow: 1
+                }
+            }
+        ]
+    });
+}
+
 function handlePageLoaded() {
     initToggler('menuToggler', 'header-nav', 'header-nav--visible');
 
     initRating();
     initContacts();
+    initSlider();
 }

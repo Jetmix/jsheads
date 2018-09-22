@@ -60,9 +60,13 @@ gulp.task('fonts', function () {
 });
 
 gulp.task('less', function () {
-	gulp.src('./src/less/main.less')
+	gulp.src([
+		'./src/vendor/*.less',
+		'./src/less/main.less'
+	])
+		.pipe(concat('compiled.css'))
 		.pipe(plumber())
-		.pipe(less())
+		.pipe(less({javascriptEnabled: true}))
 		.pipe(rename(function (path) {
 			path.basename = "styles";
 		}))
@@ -91,8 +95,8 @@ gulp.task('sprite', function() {
 			.pipe(spritesmith({
 				algorithm: 'diagonal',
 				imgName: 'sprite.png',
-				cssName: 'sprite.scss',
-				cssFormat: 'scss',
+				cssName: 'sprite.less',
+				cssFormat: 'less',
 				cssVarMap: function (sprite) {
 					sprite.name = 'icon-' + sprite.name;
 				},
@@ -100,7 +104,7 @@ gulp.task('sprite', function() {
 			}));
 
 	spriteData.img.pipe(gulp.dest('./dist/img/'));
-	spriteData.css.pipe(gulp.dest('./src/scss/'));
+	spriteData.css.pipe(gulp.dest('./src/less/'));
 
 	return spriteData;
 });

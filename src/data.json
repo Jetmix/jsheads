@@ -29,32 +29,32 @@
             {
                 "title": "Desktop Development",
                 "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna",
-                "icon": ""
+                "icon": "service-desktop"
             },
             {
                 "title": "Web Development",
                 "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna",
-                "icon": ""
+                "icon": "service-web"
             },
             {
                 "title": "Mobile Development",
                 "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna",
-                "icon": ""
+                "icon": "service-mobile"
             },
             {
                 "title": "Quality Assurance",
                 "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna",
-                "icon": ""
+                "icon": "service-qa"
             },
             {
                 "title": "Startups",
                 "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna",
-                "icon": ""
+                "icon": "service-startups"
             },
             {
                 "title": "Dedicated Team",
                 "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna",
-                "icon": ""
+                "icon": "service-dedicated"
             }
         ]
     },
@@ -64,43 +64,43 @@
             {
                 "title": "Commerce",
                 "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna",
-                "icon": ""
+                "icon": "solution-commerce"
             },
             
             {
                 "title": "B2B & B2C Web Portals",
                 "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna",
-                "icon": ""
+                "icon": "solution-web"
             },
             {
                 "title": "Enterprise Portals & Intranet",
                 "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna",
-                "icon": ""
+                "icon": "solution-portals"
             },
             {
                 "title": "Enterprice Mobility",
                 "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna",
-                "icon": ""
+                "icon": "solution-mobility"
             },
             {
                 "title": "Enterprise Resource Planning",
                 "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna",
-                "icon": ""
+                "icon": "solution-planning"
             },
             {
                 "title": "Online Billing & Payment",
                 "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna",
-                "icon": ""
+                "icon": "solution-payment"
             },
             {
                 "title": "Enterprise Content Document Manangement",
                 "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna",
-                "icon": ""
+                "icon": "solution-documents"
             },
             {
                 "title": "Customer Relationship Management",
                 "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna",
-                "icon": ""
+                "icon": "solution-relations"
             }
         ]
     },
@@ -206,6 +206,26 @@
                     "swift",
                     "mobile"
                 ]
+            },
+            {
+                "title": "Netflix Mobile",
+                "type": "Application",
+                "image": "carousel_img",
+                "tags": [
+                    "ios",
+                    "swift",
+                    "mobile"
+                ]
+            },
+            {
+                "title": "Netflix Mobile",
+                "type": "Application",
+                "image": "carousel_img",
+                "tags": [
+                    "ios",
+                    "swift",
+                    "mobile"
+                ]
             }
         ]
     },
@@ -250,33 +270,33 @@
             {
                 "title": "Customer-oriented approach",
                 "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna",
-                "icon": ""
+                "icon": "advantage-customer"
             },
             
             {
                 "title": "Fair cost",
                 "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna",
-                "icon": ""
+                "icon": "advantage-cost"
             },
             {
                 "title": "Stable qualified teams",
                 "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna",
-                "icon": ""
+                "icon": "advantage-team"
             },
             {
                 "title": "Full cycle services",
                 "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna",
-                "icon": ""
+                "icon": "advantage-cycle"
             },
             {
                 "title": "Seamless Communication",
                 "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna",
-                "icon": ""
+                "icon": "advantage-communication"
             },
             {
                 "title": "Flexibility",
                 "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna",
-                "icon": ""
+                "icon": "advantage-flex"
             }
         ]
     },
