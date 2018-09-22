@@ -117,7 +117,6 @@ gulp.task('watcher', function() {
 });
 
 gulp.task('build', [
-	'mustache',
 	'images',
 	'sprite',
 	'fonts',
@@ -127,6 +126,7 @@ gulp.task('build', [
 
 gulp.task('default', [
 	'mustache',
+	'images',
 	'sprite',
 	'styles',
 	'scripts',

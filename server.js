@@ -1,6 +1,7 @@
 const fs = require('fs');
 const path = require('path');
 const express = require('express');
+const mustacheExpress = require('mustache-express');
 const nodeMailer = require('nodemailer');
 const bodyParser = require('body-parser');
 const winston = require('winston');
@@ -8,12 +9,14 @@ const expressWinston = require('express-winston');
 const { check, validationResult } = require('express-validator/check');
 const { matchedData } = require('express-validator/filter');
 
+const data = require('./src/data.json');
 const settings = require('./settings.json');
 
 const app = express();
 
 const PORT = process.env.PORT || 3002;
 const PUBLIC_PATH = path.resolve(__dirname, './dist');
+const VIEWS_PATH = path.resolve(__dirname, './src/templates');
 
 const logger = winston.createLogger({
     level: 'info',
@@ -42,15 +45,16 @@ app.use(expressWinston.logger({
     ignoreRoute: function (req, res) { return false; }
 }));
 
+app.engine('mustache', mustacheExpress());
+app.set('view engine', 'mustache');
+app.set('views', VIEWS_PATH);
+
 app.use(express.static(PUBLIC_PATH));
 app.use(bodyParser.urlencoded({extended: true}));
 app.use(bodyParser.json());
 
-const templateIndex = fs.readFileSync(`${PUBLIC_PATH}/index.html`);
-
 app.get('/', (req, res) => {
-    res.setHeader('Content-Type', 'text/html');
-    res.send(templateIndex);
+    res.render('index.mustache', data);
 });
 
 // Email sending
@@ -108,7 +112,7 @@ app.post('/contacts', [
             if (err) {
                 console.log(err);
 
-                data = 'Error! Message hasn\'t been sent.';
+                data = 'Server error! Message hasn\'t been sent.';
                 res.status(err.responseCode).send({ data, error: err.response });
                 return;
             }
