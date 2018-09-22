@@ -180,6 +180,8 @@ function initSlider() {
         centerMode: true,
         centerPadding: '12px',
         slidesToShow: 3,
+        prevArrow: '<a href="javascript:void(0);" class="slick-prev slick-arrow"><i class="icon icon-arrow-left"></i></a>',
+        nextArrow: '<a href="javascript:void(0);" class="slick-next slick-arrow"><i class="icon icon-arrow-right"></i></a>',
         responsive: [
             {
                 breakpoint: 768,
