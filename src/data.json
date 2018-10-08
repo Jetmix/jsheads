@@ -3,28 +3,29 @@
         "menu": [
             {
                 "title": "Company",
-                "link": ""
+                "link": "company"
             },
             {
                 "title": "Services",
-                "link": ""
+                "link": "services"
             },
             {
                 "title": "Solutions",
-                "link": ""
+                "link": "solutions"
             },
             {
                 "title": "Industries",
-                "link": ""
+                "link": "industries"
             },
             {
-                "title": "Approach",
-                "link": ""
+                "title": "Technologies",
+                "link": "technologies"
             }
         ]
     },
     "services": {
         "title": "Services",
+        "alias": "services",
         "items": [
             {
                 "title": "Desktop Development",
@@ -60,6 +61,7 @@
     },
     "solutions": {
         "title": "Solutions",
+        "alias": "solutions",
         "items": [
             {
                 "title": "Commerce",
@@ -106,6 +108,7 @@
     },
     "industries": {
         "title": "Industries",
+        "alias": "industries",
         "items": [
             {
                 "title": "Travelling & Hospitality",
@@ -135,6 +138,7 @@
     },
     "technologies": {
         "title": "Technologies",
+        "alias": "technologies",
         "items": [
             {
                 "title": "Front-end",
@@ -176,6 +180,7 @@
     },
     "selected": {
         "title": "Selected cases",
+        "alias": "selected",
         "items": [
             {
                 "title": "Netflix Mobile",
@@ -231,6 +236,7 @@
     },
     "rating": {
         "title": "How our customers rate us",
+        "alias": "rating",
         "items": [
             {
                 "id": "recommend",
@@ -266,6 +272,7 @@
     },
     "advantages": {
         "title": "Our Advantages",
+        "alias": "advantages",
         "items": [
             {
                 "title": "Customer-oriented approach",
