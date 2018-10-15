@@ -8,7 +8,8 @@
   "scripts": {
     "dev": "nodemon server.js",
     "start": "npm run gulp:prod && node server.js",
-    "gulp:prod": "set NODE_ENV=production && gulp build"
+    "gulp:prod": "set NODE_ENV=production && gulp build",
+    "postinstall": "gulp default"
   },
   "devDependencies": {
     "browser-sync": "^2.24.7",
