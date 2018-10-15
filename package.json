@@ -4,6 +4,7 @@
   "description": "jsheads",
   "author": "Sergey Korol",
   "license": "ISC",
+  "main": "server.js",
   "scripts": {
     "dev": "nodemon server.js",
     "start": "npm run gulp:prod && node server.js",
