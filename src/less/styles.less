@@ -19,6 +19,14 @@ body {
   margin-bottom: 0 !important;
 }
 
+.text-shadow {
+  text-shadow: 0 1px 1px rgba(0, 0, 0, 0.6);
+}
+
+.transition {
+  transition: all 0.2s ease-out;
+}
+
 .container {
   height: auto;
   max-width: 1110px;
@@ -37,6 +45,7 @@ body {
 
 .main-title {
   .title;
+  .text-shadow;
   
   font-size: 80px;
   line-height: 95px;
@@ -109,6 +118,7 @@ body {
 
     @media screen and (max-width: @mobile) {
       font-size: 22px;
+      text-align: left;
     }
   }
 
@@ -154,7 +164,9 @@ body {
 
   &--main {
     .gradient(right, @btn-start, @btn-stop);
-    color: @btn-text;
+    .text-shadow;
+    font-weight: 600;
+    color: @subtitle;
 
     &:hover {
       .gradient(left, @btn-start, @btn-stop);
@@ -220,13 +232,15 @@ body {
       display: none;
       margin: 10px 0;
       border-bottom: 1px solid @background;
+    }
 
-      &--visible {
-        display: block;
-      }
+    @media screen and (min-width: @tablet) {
+      display: flex !important;
     }
 
     &__item {
+      .text-shadow;
+
       margin-left: 25px;
       font-size: 15px;
       text-transform: uppercase;
@@ -235,6 +249,7 @@ body {
 
       &:hover {
         color: @color-subheader-3;
+        cursor: pointer;
       }
 
       @media screen and (max-width: @desktop) {
@@ -435,11 +450,17 @@ body {
     margin-bottom: 25px;
 
     &__link {
+      .transition;
       display: block;
       position: relative;
       width: 100%;
       border-radius: 5px;
       box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+
+      &:hover {
+        box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
+        cursor: pointer;
+      }
     }
 
     &__image {
@@ -447,6 +468,7 @@ body {
       height: 100%;
       width: 100%;
       max-width: 100%;
+      border-radius: 5px;
     }
 
     &__title {
@@ -489,6 +511,7 @@ body {
     width: 100%;
     padding: 60px 65px 30px;
     border-radius: 5px;
+    justify-content: space-between;
     background-color: rgba(255, 255, 255, .7);
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     list-style: none;
@@ -500,6 +523,7 @@ body {
 
     @media screen and (max-width: @mobile) {
       padding: 20px 5px 25px;
+      justify-content: center;
     }
 
     &__item {
@@ -545,6 +569,11 @@ body {
 
     &-container {
       margin-bottom: 40px;
+
+      @media screen and (max-width: @mobile) {
+        max-width: 50%;
+        flex: 0 0 50%;
+      }
     }
     
     &__title {
@@ -643,6 +672,7 @@ body {
   }
 
   &__item {
+    overflow: hidden;
     font-family: 'BrandonGrotesque Medium', Arial, Helvetica, sans-serif;
     font-size: 14px;
     text-transform: uppercase;
@@ -653,8 +683,10 @@ body {
       margin-bottom: 5px;
     }
 
-    &--link {
-      font-size: 16px;
+    &--link {    
+      display: block;
+      font-size: 14px;
+      text-overflow: ellipsis;
 
       &:hover {
         text-decoration: none;
@@ -760,14 +792,17 @@ body {
   }
 
   &__label {
-    font-size: 18px;
+    display: block;
+    margin-bottom: 5px;
+    font-size: 14px;
+    font-weight: 600;
     text-transform: uppercase;
     color: @color-subheader-1;
   }
 
   &__input {
     padding: 9px 15px 10px;
-    border: 1px solid @background-start;
+    border: 1px solid rgba(0,0,0,.2);
     border-radius: 5px;
     font-family: 'BrandonGrotesque Medium', Arial, Helvetica, sans-serif;
     font-size: 20px;
@@ -775,7 +810,7 @@ body {
     color: @color-subheader-1;
 
     &:focus {
-      border-color: darken(@background-start, 20%);
+      border-color: darken(rgba(0,0,0,.2), 20%);
       box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
     }
 
@@ -823,7 +858,7 @@ body {
 
       &:focus {
         outline: none;
-    }
+      }
     }
 
     &-image {
@@ -834,6 +869,7 @@ body {
       border-radius: 5px;
 
       &-wrapper {
+        .transition;
         position: relative;
         margin-bottom: 10px;
         border-radius: 5px;
@@ -860,7 +896,7 @@ body {
 
     &:hover {
       .selected-elem-image-wrapper {
-        box-shadow: 0 0 30px rgba(0, 0, 0, 0.4);
+        box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
       }
     }
   }
@@ -873,7 +909,7 @@ body {
   padding: 0 7px 14px;
 
   &__item {
-    margin: 0 7px;
+    margin: 0 7px 5px;
     padding: 1px 8px 2px;
     border-radius: 4px;
     font-size: 16px;
@@ -891,6 +927,10 @@ body {
 
   &-center {
     transform: scale(1.1);
+
+    @media screen and (max-width: @tablet) {
+      transform: none;
+    }
   }
 
   &-arrow {

@@ -14,7 +14,7 @@ var browserSync = require('browser-sync');
 var reload = browserSync.reload;
 
 function isProd() {
-	return process.env.NODE_ENV.trim() === 'production';
+	return process.env.NODE_ENV && process.env.NODE_ENV.trim() === 'production';
 }
 
 gulp.task('browserSync', function() {
