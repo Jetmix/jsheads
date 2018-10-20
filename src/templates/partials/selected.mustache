@@ -8,11 +8,11 @@
             {{# items}}
             <div class="selected-elem">
                 <div class="selected-elem-wrapper">
-                    <a href="" class="selected-elem__link">
+                    <a href="javascript:void(0)" class="selected-elem__link">
                         <div class="selected-elem-image-wrapper">
                             <img class="selected-elem-image" src="/img/{{image}}.jpg" alt="">
                             <div class="selected-elem-image__overlay"></div>
-                            <div class="tags-list d-flex">
+                            <div class="tags-list d-flex flex-wrap">
                                 {{# tags}}
                                 <div class="tags-list__item">{{.}}</div>
                                 {{/ tags}}

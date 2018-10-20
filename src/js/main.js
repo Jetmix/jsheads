@@ -1,24 +1,66 @@
 document.addEventListener('DOMContentLoaded', handlePageLoaded);
 
 function initToggler(togglerId, listClassName, isVisibleClassName) {
-    if (!togglerId || !listClassName || !isVisibleClassName) return;
+    if (!togglerId || !listClassName) return;
 
-    var togglerElem = document.getElementById(togglerId);
-    var blockElem = document.querySelector('.' + listClassName);
+    var togglerElem = $('#' + togglerId);
+    var blockElem = $('.' + listClassName);
 
     function toggleBlock(e) {
         e.preventDefault();
         e.stopPropagation();
+
+        function slideCallback() {
+            $(this).toggleClass(isVisibleClassName);
+        }
         
-        blockElem.classList.toggle(isVisibleClassName);
+        blockElem.slideToggle(200, slideCallback);
     }
 
     function closeBlock() {
-        blockElem.classList.remove(isVisibleClassName);
+        function closeCallback() {
+            $(this).removeClass(isVisibleClassName);
+        }
+
+        blockElem.slideUp(200, closeCallback);
     }
 
-    togglerElem.addEventListener('click', toggleBlock);
-    document.addEventListener('click', closeBlock);
+    togglerElem.on('click', toggleBlock);
+    $(document).on('click', closeBlock);
+}
+
+function initNavigation() {
+    var $body = $('html, body');
+
+    function parseLink(link) {
+        return link.trim().indexOf('#') === 0
+            ? link.slice(1)
+            : link;
+    }
+
+    function getSectionOffset(section) {
+        return section.offset().top;
+    }
+
+    function scrollToSection(section) {
+        var sectionOffset = getSectionOffset(section);
+
+        $body.animate({scrollTop: sectionOffset}, 300);
+    }
+
+    function linkClickHandler(event) {
+        event.preventDefault();
+
+        var $link = $(this).attr('href');
+        var parsedLink = parseLink($link.trim());
+        var $section = $('#' + parsedLink);
+
+        if ($section.length) {
+            scrollToSection($section);
+        }
+    }
+
+    $('#headerNav').on('click', '.main-menu__item', linkClickHandler);
 }
 
 function initRating() {
@@ -186,7 +228,6 @@ function initSlider() {
             {
                 breakpoint: 768,
                 settings: {
-                    arrows: false,
                     centerMode: true,
                     centerPadding: '12px',
                     slidesToShow: 2
@@ -195,7 +236,6 @@ function initSlider() {
             {
                 breakpoint: 480,
                 settings: {
-                    arrows: false,
                     centerMode: true,
                     centerPadding: '12px',
                     slidesToShow: 1
@@ -208,6 +248,7 @@ function initSlider() {
 function handlePageLoaded() {
     initToggler('menuToggler', 'header-nav', 'header-nav--visible');
 
+    initNavigation();
     initRating();
     initContacts();
     initSlider();
