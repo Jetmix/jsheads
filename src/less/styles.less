@@ -330,7 +330,11 @@ body {
 
   &-elem {
     margin-bottom: 30px;
-    padding-right: 16.6%;
+    padding-right: 0%;
+
+    @media screen and (max-width: @tablet) {
+      padding-right: 20px;
+    }
 
     &__icon {
       min-width: 16.6%;
@@ -351,6 +355,7 @@ body {
       font-family: 'Open Sans';
       font-size: 16px;
       color: @text;
+      text-align: justify;
     }
   }
 }
@@ -414,6 +419,7 @@ body {
       font-family: 'Open Sans';
       font-size: 16px;
       color: @text-service;
+      text-align: justify;
     }
 
     &__link-block {
