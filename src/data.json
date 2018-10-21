@@ -29,32 +29,32 @@
         "items": [
             {
                 "title": "Desktop Development",
-                "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna",
+                "description": "JS Heads leverages the latest development technologies to create standalone custom desktop applications. We have broad experience in developing user-friendly desktop software solutions and client-server applications tailored to specific business needs.",
                 "icon": "service-desktop"
             },
             {
                 "title": "Web Development",
-                "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna",
+                "description": "We create feature-rich custom applications that perfectly work across all popular browsers and deliver immaculate UX with a clear logical layout and mobile adaptation.",
                 "icon": "service-web"
             },
             {
                 "title": "Mobile Development",
-                "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna",
+                "description": "We create custom mobile applications that satisfy your criteria and help your business stay connected. With innovation and quality in every one of our apps, we can strengthen your relationship with your on-the-go audience.",
                 "icon": "service-mobile"
             },
             {
                 "title": "Quality Assurance",
-                "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna",
+                "description": "We provide end-to-end testing services at each stage of the software development lifecycle to ensure all the pieces integrated into your solution are performing as designed from start to finish.",
                 "icon": "service-qa"
             },
             {
-                "title": "Startups",
-                "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna",
+                "title": "StartUps",
+                "description": "Creating a new product from scratch or becoming the next unicorn isn't easy. With JS Heads as your technology partner, you can make it happen. We efficiently combine Lean and Scrum to foster product’s agility and deliver project on-schedule and on-budget.",
                 "icon": "service-startups"
             },
             {
                 "title": "Dedicated Team",
-                "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna",
+                "description": "JS Heads builds professional full-time dedicated teams to bring together innovation, technology, and talent extending your company’s capacity. We ensure rapid team ramp-up, painless scaling up and down.",
                 "icon": "service-dedicated"
             }
         ]
@@ -64,44 +64,44 @@
         "alias": "solutions",
         "items": [
             {
-                "title": "Commerce",
-                "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna",
+                "title": "E-commerce",
+                "description": "JS Heads leverages business insights and our technical competencies to develop e-commerce web solutions that pay off.",
                 "icon": "solution-commerce"
             },
             
             {
                 "title": "B2B & B2C Web Portals",
-                "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna",
+                "description": "We develop an architecture of an open market with advanced search options, which concentrates on a service, material or a product, bringing together buyers and sellers from different industries in both domestic and international markets.",
                 "icon": "solution-web"
             },
             {
                 "title": "Enterprise Portals & Intranet",
-                "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna",
+                "description": "We work to accelerate your business processes through more efficient utilization of corporate information resources.",
                 "icon": "solution-portals"
             },
             {
                 "title": "Enterprice Mobility",
-                "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna",
+                "description": "JS Heads has a deep expertise in transforming enterprise software into fully functional mobile suites. We develop a convenient mobile version of your website to bring a huge mobile user base to your online business.",
                 "icon": "solution-mobility"
             },
             {
-                "title": "Enterprise Resource Planning",
-                "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna",
+                "title": "Enterprise Resource Planning and Human Capital Management",
+                "description": "JS Heads team creates software to gain strong competitive advantage in hiring, engaging, and retaining the most knowledgeable and passionate people in the industry.",
                 "icon": "solution-planning"
             },
             {
                 "title": "Online Billing & Payment",
-                "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna",
+                "description": "We integrate solid online billing solution with support of customized payment terms, real-time billing and management of multiple revenue streams.",
                 "icon": "solution-payment"
             },
             {
                 "title": "Enterprise Content Document Manangement",
-                "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna",
+                "description": "JS Heads builds systems for data, document and knowledge management to organize, use and store corporate content in the most efficient way.",
                 "icon": "solution-documents"
             },
             {
                 "title": "Customer Relationship Management",
-                "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna",
+                "description": "JS Heads creates systems to accelerate business processes - from account management and marketing campaigns to sales automation and customer service.",
                 "icon": "solution-relations"
             }
         ]
@@ -276,33 +276,33 @@
         "items": [
             {
                 "title": "Customer-oriented approach",
-                "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna",
+                "description": "We deliver a fully personalized approach standing back to back in cooperation with our customers building long-term business relationships.",
                 "icon": "advantage-customer"
             },
             
             {
-                "title": "Fair cost",
-                "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna",
+                "title": "Transparent Pricing",
+                "description": "We offer fair, transparent pricing at every stage of your project. We give you all the information you need to make the right business decisions.",
                 "icon": "advantage-cost"
             },
             {
                 "title": "Stable qualified teams",
-                "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna",
+                "description": "All our developers are a rare breed: good at code and great at working in teams. We have a diverse technology stack experience and ready to face any challenge.",
                 "icon": "advantage-team"
             },
             {
                 "title": "Full cycle services",
-                "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna",
+                "description": "We provide a 360-degree software development process covering every stage of SDLC starting from an idea to working product and its support.",
                 "icon": "advantage-cycle"
             },
             {
                 "title": "Seamless Communication",
-                "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna",
+                "description": "We strive to develop clear and abundant communication channels, be it with technological or in-person ways. We build the bridges in communication and keep the focus on end goals.",
                 "icon": "advantage-communication"
             },
             {
                 "title": "Flexibility",
-                "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna",
+                "description": "Our approach combines the best aspects of Lean and Scrum to foster on‑demand scalability and agility. We are constantly improving our processes based on your project’s demands.",
                 "icon": "advantage-flex"
             }
         ]
