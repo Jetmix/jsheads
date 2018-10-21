@@ -17,16 +17,7 @@ function initToggler(togglerId, listClassName, isVisibleClassName) {
         blockElem.slideToggle(200, slideCallback);
     }
 
-    function closeBlock() {
-        function closeCallback() {
-            $(this).removeClass(isVisibleClassName);
-        }
-
-        blockElem.slideUp(200, closeCallback);
-    }
-
     togglerElem.on('click', toggleBlock);
-    $(document).on('click', closeBlock);
 }
 
 function initNavigation() {
